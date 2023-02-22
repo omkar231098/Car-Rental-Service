@@ -1,0 +1,24 @@
+
+table{
+    background-color: blueviolet;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    color: white;
+    border-radius: 10px;
+    width: 50%;
+    height: 100%;
+}
+table input{
+    /* width: 50%; */
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border-style: solid;
+}
+select{
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+}
+table th{
+    font-size: 20px;
+}
