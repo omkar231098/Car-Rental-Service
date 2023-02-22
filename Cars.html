@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="Cars.css">
+<body>
+
+<!--------------------------------------------------------Main Div------------------------------------------------------>
+<main id="main">
+<!--------------------------------------------------Side Naviagation Div----------------------------------------------->
+  <nav id="sidenav" >
+
+  <img src="Car RentalExpress (1).png" alt="" width="90%">
+
+  <h3 id="searchtitle">Find Your Dream Car </h3>
+        
+  <input type="text" name="search" id="searchbox" placeholder="Search Cars">
+  <br>
+
+  <hr style=" border: none; background-color:rgb(255, 18, 18); width: 98%; height: 1.8px;">
+  <br>
+
+<!-----------------------------------------------------Filter Buttons--------------------------------------------------->
+<button type="button" class="collapsible">Sort By</button>
+<div class="content" id="content1">
+
+    <div><button class="sortbtnhover" id="sortbtn" >Year : New to Old</button></div>
+    <div><button class="sortbtnhover" id="sortbtn" >Year : Old to New</button></div>
+    <div><button class="sortbtnhover" id="sortbtn" >Mileage: Low to High</button></div>
+    <div><button class="sortbtnhover" id="sortbtn" >Mileage: High to Low</button></div>
+    <div><button class="sortbtnhover" id="sortbtn" >Price: Low to High</button></div>
+    <div><button class="sortbtnhover" id="sortbtn" >Price: High to Low</button></div>
+    
+
+</div>
+
+<button type="button" class="collapsible">Brands</button>
+<div class="content">
+  
+  <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">Mustang</input></div>
+    
+    <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">Highlander</input></div>
+
+    <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">Corolla</input></div>
+    
+    <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">Ford</input></div>
+    
+    <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">Civic</input></div>
+
+
+</div>
+
+<button type="button" class="collapsible">Location</button>
+<div class="content">
+ 
+    <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">Delhi</input></div>
+    
+    <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">Mumbai</input></div>
+
+    <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">Bangalore</input></div>
+    
+    <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">Hyderabad</input></div>
+    
+    <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">Kolkata</input></div>
+
+    <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">Pune</input></div>
+    
+    <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">Patna</input></div>
+
+    <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">Rajkot</input></div>
+    
+    <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">Meerut</input></div>
+    
+    <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">Varanasi</input></div>
+
+
+</div>
+
+<button type="button" class="collapsible">Mileage</button>
+<div class="content">
+ 
+  <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">30,000 or less</input></div>
+    
+  <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">40,000 or less</input></div>
+
+  <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">50,000 or less</input></div>
+  
+  <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">60,000 or less</input></div>
+  
+  <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">70,000 or less</input></div>
+   
+  <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">80,000 or less</input></div>
+  
+  <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">90,000 or less</input></div>
+  
+  <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">100,000 or less</input></div>
+
+</div>
+
+
+  </nav>
+
+<div class="data-list-wrapper" id="data-list-wrapper"></div>
+
+</main>
+    
+
+</body>
+</html>
+
+<script src="Cars.js"></script>
+
+
+
+
