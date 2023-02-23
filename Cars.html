@@ -13,11 +13,11 @@
 <!--------------------------------------------------Side Naviagation Div----------------------------------------------->
   <nav id="sidenav" >
 
-  <img src="Car RentalExpress (1).png" alt="" width="90%">
+  <img onclick="reset()" src="Car RentalExpress (1).png" alt="" width="90%">
 
   <h3 id="searchtitle">Find Your Dream Car </h3>
         
-  <input type="text" name="search" id="searchbox" placeholder="Search Cars">
+  <input type="text" oninput="search()"  name="search" id="searchbox"   placeholder="Search Cars">
   <br>
 
   <hr style=" border: none; background-color:rgb(255, 18, 18); width: 98%; height: 1.8px;">
@@ -27,12 +27,12 @@
 <button type="button" class="collapsible">Sort By</button>
 <div class="content" id="content1">
 
-    <div><button class="sortbtnhover" id="sortbtn" >Year : New to Old</button></div>
-    <div><button class="sortbtnhover" id="sortbtn" >Year : Old to New</button></div>
-    <div><button class="sortbtnhover" id="sortbtn" >Mileage: Low to High</button></div>
-    <div><button class="sortbtnhover" id="sortbtn" >Mileage: High to Low</button></div>
-    <div><button class="sortbtnhover" id="sortbtn" >Price: Low to High</button></div>
-    <div><button class="sortbtnhover" id="sortbtn" >Price: High to Low</button></div>
+    <div><button onclick="handlesort1()" class="sortbtnhover" id="sortbtn1" >Year : New to Old</button></div>
+    <div><button onclick="handlesort2()" class="sortbtnhover" id="sortbtn2" >Year : Old to New</button></div>
+    <div><button onclick="handlesort3()" class="sortbtnhover" id="sortbtn3" >Mileage: Low to High</button></div>
+    <div><button onclick="handlesort4()" class="sortbtnhover" id="sortbtn4" >Mileage: High to Low</button></div>
+    <div><button onclick="handlesort5()" class="sortbtnhover" id="sortbtn5" >Price: Low to High</button></div>
+    <div><button onclick="handlesort6()" class="sortbtnhover" id="sortbtn6" >Price: High to Low</button></div>
     
 
 </div>
@@ -40,15 +40,15 @@
 <button type="button" class="collapsible">Brands</button>
 <div class="content">
   
-  <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">Mustang</input></div>
+  <div><input id="box" class="1" type="checkbox" onclick="brand1()" name="checkbox-filter-1" value="Mitsubishi">Mitsubishi</input></div>
     
-    <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">Highlander</input></div>
+    <div><input id="box" class="2" type="checkbox" onclick="brand2()" name="checkbox-filter-1" value="by AgriPro">Highlander</input></div>
 
-    <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">Corolla</input></div>
+    <div><input id="box" class="3" type="checkbox" onclick="brand3()" name="checkbox-filter-1" value="by AgriPro">Corolla</input></div>
     
-    <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">Ford</input></div>
+    <div><input id="box" class="4" type="checkbox" onclick="brand4()" name="checkbox-filter-1" value="by AgriPro">Ford</input></div>
     
-    <div><input id="box" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">Civic</input></div>
+    <div><input id="box" class="5" type="checkbox" onclick="brand5()" name="checkbox-filter-1" value="by AgriPro">Civic</input></div>
 
 
 </div>
@@ -105,8 +105,11 @@
 
 <div class="data-list-wrapper" id="data-list-wrapper"></div>
 
+
+
 </main>
-    
+
+<div class="pagination-wrapper" id="pagination-wrapper"></div>
 
 </body>
 </html>
