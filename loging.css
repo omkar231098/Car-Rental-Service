@@ -1,19 +1,83 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .btn-login{
     padding: 10px 15px;
     background-color: black;
     color: white;
     cursor: pointer;
-    font-family: Arial, Helvetica, sans-serif;
+   
+}
+#login{
+    margin: auto;
+    text-align: center;
+    width: 100%;
 }
 .overlay{
     width: 100%;
-    position: fixed;
+    background: rgba(0,0, 0,0.5 );
     height: 100vh;
-    background: rgba(red, green, blue, alpha);
-    z-index: -1;
+    position: fixed;
+    top: 0%;
+    z-index:-1 ;
+    transition: 1s;
     opacity: 0;
+}
+.showoverlay{
+    opacity: 1;
+    z-index: 1;
+}
+.loginform{
+    width: 350px;
+    background-color: white;
+    padding: 30px 30px ;
+    position: absolute;
+    z-index: 9;
+    transition: 2s;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%,-50%);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+    padding: 40px;
+    font-size: 20px;
+}
+.showloginform{
+  top: 50%;
+  /* z-index: 1; */
+}
+.loginform input{
+    width: 100%;
+    margin-bottom:  15px ;
+    margin-top: 10px;
+    height: 35px;
+    outline: black;
+    outline-style:auto;
+}
+.loginform button{
+    background-color:rgb(213,1,42);
+    color: white ;
+    padding: 10px 15px;
+    border: none;
+    height: 50px;
+    font-size: 20px;
+   
+}
+.loginform span{
+    position: absolute;
+    right: 5px;
+    width: 30px ;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgb(213,1,42);
+    text-align: center;
+    top: 5px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#username,#password{
+height: 40px;
 }

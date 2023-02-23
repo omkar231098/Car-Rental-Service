@@ -34,6 +34,7 @@ e.preventDefault();
    if(firstPassword.value==secondPassword.value){
     //console.log(obj);
     alert("Successfully Registred");
+    
     fetch(url,{
         method:"POST",
         body:JSON.stringify(obj),
@@ -41,8 +42,9 @@ e.preventDefault();
     }).then((res)=>{return res.json()})
     .then((data)=>{
         console.log(data)
+        window.location.href="login.html";
     })
-
+    
    }else{
     alert("Password Mismatched")
     secondPassword.value=null;
