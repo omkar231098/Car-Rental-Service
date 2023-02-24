@@ -1,0 +1,190 @@
+#main{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 95%;
+    column-gap: 10px;
+    }
+    
+    #sidenav{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    height:100%;
+    animation: slidenavbar 4s infinite;  
+          
+    
+    }
+    
+    @keyframes slidenavbar {
+    0%   {box-shadow: 0 0 3.5px rgb(52, 6, 255)}
+    10%  {box-shadow: 0 0 3.5px   rgb(52, 6, 255)}
+    20%   {box-shadow: 0 0 3.5px rgb(52, 6, 255)}
+    30%  {box-shadow: 0 0 3.5px   rgb(52, 6, 255)}
+    40%   {box-shadow: 0 0 3.5px rgb(52, 6, 255)}
+    50%  {box-shadow:0 0 3.5px   rgb(50,51,56)}
+    60% {box-shadow: 0 0 3.5px  rgb(50,51,56)}
+    70%  {box-shadow:0 0 3.5px   rgb(50,51,56)}
+    80% {box-shadow: 0 0 3.5px  rgb(50,51,56)}
+    90%  {box-shadow:0 0 3.5px   rgb(50,51,56)}
+    100%  {box-shadow:0 0 3.5px   rgb(52, 6, 255)}
+    }
+    
+    #data-list-wrapper{
+    display: flex;
+    padding: 10px;
+    margin: auto;
+    animation: slidenavbar 4s infinite; 
+    }
+    
+ 
+
+/* ------------------------------------------------Card Css Part---------------------------------------------------- */
+    
+
+    .card-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    width: 100%;
+    border: 1px solid none;
+    gap: 12px;
+    }
+
+    .card{
+        text-align: center;
+        padding: 12px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+    .cardbtn{
+        width: 50%;
+        height: 30px;
+        background-color:rgb(52, 6, 255) ;
+        color: white;
+        border: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        margin-top: 8px;
+
+    }
+    .cardbtn1{
+        width: 50%;
+        height: 30px;
+        background-color:rgb(213,1,42) ;
+        color: white;
+        border: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        margin-top: 8px;
+
+    }
+
+    #cardhover{
+        position: relative;
+        display: inline-block;
+        width: auto;
+        height: auto;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    #cardhover::after{
+        content: "";
+        border-radius: 5px;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+         transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        
+        #cardhover:hover{
+        -webkit-transform: scale(1.01, 1.01);
+        transform: scale(1.01, 1.01);
+        }
+        
+        #cardhover:hover::after{
+        opacity: 1;
+        }
+
+
+/*------------------------------------------------ Pagination CSS Part--------------------------------------------- */
+
+    .pagination-wrapper {
+        border: none;
+        border-radius: 4px;
+        margin-top: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+
+        }
+        
+    .pagination-button{
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border: none;;
+        padding: 10px;
+        margin-left: 5px;
+          }
+
+/* --------------------------------------Input Data Css Part---------------------------------------------- */
+#headtitle{
+    color: rgb(255, 255, 255);
+    background-color:rgb(213,1,42) ;
+}
+
+#headsubtitle{
+     font-size: 23px;
+     color: rgb(0, 0, 0);
+   
+}
+.u-full-width{
+margin-top: 10px;
+height: 30px;
+background-color: rgb(52, 6, 255);
+color: white;
+font-size: 15px;
+border: none;
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+padding: 5px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.u-full-width1{
+
+margin-top: 10px;
+height: 35px;
+background-color: rgb(213,1,42);
+color: white;
+font-size: 15px;
+border: none;
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+padding: 5px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+::placeholder{
+font-size: 15px;
+ color: rgba(255, 255, 255, 0.737);
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
