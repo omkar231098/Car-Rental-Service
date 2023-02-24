@@ -102,7 +102,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     
-    #box{
+    #box1,#box2,#box3,#box4,#box5,#box6,#box7,#box8{
     margin-top: 15px;
      
     }
@@ -187,7 +187,7 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         
     }
-    #cardbtn{
+    .cardbtn{
         width: 50%;
         height: 30px;
         background-color:rgb(213,1,42) ;
