@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="adminlogin.css">
+</head>
+<body>
+    <h3 id="title" >WELCOME ADMIN</h3>
+    <div id="formDiv">
+        <form id="signUp">
+          
+          <h1 id="title1">Please Register!</h1>
+          <input type="text" id="name" placeholder="Name" required />
+          <br />
+          <input type="number" id="phnNo" placeholder="Phone-Number">
+          <br>
+          <input type="email" id="email" placeholder="E-mail" required />
+          <br />
+          <input type="password" id="password" placeholder="Password" required />
+          <br />
+          <input
+            type="password"
+            id="passwordChk"
+            placeholder="Re-enter Password"
+            required
+          />
+          <br />
+          <input id="subbtn"  type="submit" />
+        </form>
+    
+        <form id="signIn">
+          <h1 id="title1">Please Login!</h1>
+          <input type="email" id="email1" placeholder="E-mail" required />
+          <br />
+          <input type="password" id="password1" placeholder="Password" required />
+          <br />
+    
+          <input  id="subbtn" type="submit" />
+        </form>
+        <br>
+        <br>
+        <div style="display:flex; justify-content: center; column-gap: 15px;background-color: rgb(213,1,42);;">
+          <button id="signup">Sign Up</button>
+          <br>
+         <button id="signin">Sign In</button>
+          
+        </div>
+      </div>
+</body>
+
+
+</html>
+<script src="adminlogin.js"></script>

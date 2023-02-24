@@ -1,0 +1,80 @@
+*{
+    background-color: rgb(247, 247, 247);
+}
+#formDiv{
+    display: block;
+    margin: auto;
+    width: 500px;
+    text-align: center;
+    padding: 12px;
+    background-color: rgb(213,1,42);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 4px;
+
+}
+input{
+    margin-top: 10px;
+    height: 25px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+::placeholder{
+    font-size: 15px;
+    color: rgb(94, 94, 94);
+}
+
+#subbtn{
+    background-color: rgb(52, 6, 255);
+    color: white;
+    height: 30px;
+    border: none;
+    font-size: 15px;
+    border-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+#title{
+    text-align: center;
+ 
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(213,1,42) ;
+}
+#title1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: rgb(213,1,42);
+}
+
+#signup{
+    background-color:rgb(52, 6, 255) ;
+    border: none;
+    height: 30px;
+    width: 20%;
+    font-size: 15px;
+    color: white;
+    border-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+}
+
+#signin{
+    background-color:rgb(52, 6, 255) ;
+    border: none;
+    height: 30px;
+    width: 20%;
+    font-size: 15px;
+    color: white;
+    border-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+#signUp{
+    background-color: rgb(213,1,42);  
+}
+#signIn{
+    background-color: rgb(213,1,42);  
+}
