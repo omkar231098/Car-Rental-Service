@@ -1,4 +1,12 @@
-  // Collasping Sidebar Javascript
+window.addEventListener("load", () => {
+ 
+  fetchAndRenderEmployees1() 
+  fetchAndRenderEmployees();
+});
+ 
+ 
+ 
+ // Collasping Sidebar Javascript
   
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -16,21 +24,20 @@ for (i = 0; i < coll.length; i++) {
 }
  
 
-  // -----------------------------------------------------------------------------------------------------------------
-  let mainSection = document.getElementById("data-list-wrapper");
-  let paginationWrapper = document.getElementById("pagination-wrapper");
+// ------------------------------------------------------------------------------------------------------------------
+
+
+let mainSection = document.getElementById("data-list-wrapper");
+let paginationWrapper = document.getElementById("pagination-wrapper");
   
 
   
-window.addEventListener("load", () => {
-  fetchAndRenderEmployees();
-  fetchAndRenderEmployees1() 
-});
+
 
 let CarsData = null;
 let CarsData1=null;
 
-function fetchAndRenderEmployees1() {
+async function fetchAndRenderEmployees1() {
   fetch("https://63c55501f3a73b347853986b.mockapi.io/cars")
     .then((res) => {
       // let totalCats = 70
@@ -58,16 +65,9 @@ function fetchAndRenderEmployees1() {
 
 
 
+// -----------------------------------------------------------------------------------------------------------------
 
-
-
-
-
-
-
-// --------------------------------------------------------------------------------------------------------
-
-function fetchAndRenderEmployees(pagenumber=1) {
+async function fetchAndRenderEmployees(pagenumber=1) {
   const url = new URL('https://63c55501f3a73b347853986b.mockapi.io/cars');
 
 url.searchParams.append('page', `${pagenumber}`);
@@ -87,11 +87,8 @@ console.log(res)
 
 
   }
-  // handle error
+ 
 }).then(data => {
-  // mockapi returns first 10 tasks that are not completed
-  
-  // CarsData=data 
 
  mainSection.innerHTML=renderCardList(data)
   
@@ -99,33 +96,14 @@ console.log(res)
 
 
 }).catch(error => {
-  // handle error
+  
 })
 
     
 }
-// -------------------------------------------------------------------------------------------------------------
 
-// To Search The Cars From Globally CarsData,This Code Invoke Only One Time After Oninput In SearchBox
+// ------------------------------------------------------------------------------------------------------------------
 
-// const input = document.getElementById("searchbox");
-
-// function handleInput() {
- 
-//  fetchAndRenderEmployees1()
-
-// }
-
-// function handleClick() {
-//  input.removeEventListener("click", handleClick);
-//  input.addEventListener("input", handleInput, { once: true });
-// }
-
-// input.addEventListener("click", handleClick);
-
-
-
-// -----------------------------------------------------------------------------------------------------------------
 // To Search the Cars
 
 function search(){
@@ -142,7 +120,7 @@ renderCardList(newData)
 
 
 
-// -------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------
 
 function renderCardList(data) {
 
@@ -168,6 +146,16 @@ function renderCardList(data) {
 
   mainSection.innerHTML = cardList;
 
+
+  // const buttons = document.querySelectorAll('.card__Button1');
+
+  // buttons.forEach(button => {
+  //   button.addEventListener('click', function(event) {
+  //     const currentId = event.target.id;
+  //     populateEditForms(currentId)
+  //     // console.log(`Clicked button id: ${currentId}`);
+  //   });
+  // });
   
 }
 
@@ -182,7 +170,7 @@ function getCard(id,Name,price,img,Mills,Exterior,Available,Model,location,Year)
   <img src=${img} alt="Car Image" />
   </div>
   <div class="card__body">
-      <div  class="card__item card__Button"  data-id=${id} ><button id="cardbtn">View Details</button></div>
+      <div  class="card__Button1"  ><button class="cardbtn" id=${id}>View Details</button></div>
     <h3 class="card__item card__title">${Name}</h3>
     
     <div class="card__item card__description">
@@ -210,10 +198,6 @@ function getCard(id,Name,price,img,Mills,Exterior,Available,Model,location,Year)
 
 
 
-//  ----------------------------------------------------------------------------------------------------------------
-
-
-  
 // ------------------------------------------------------------------------------------------------------------------
 // Sorting the Carsdata
 
@@ -255,51 +239,390 @@ function handlesort6() {
   renderCardList(CarsData1)
 }
 
-// -----------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------
 
 function brand1() {
-  let checkbox = document.getElementsByClassName("1");
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box1")
 
-  if (checkbox.checked == true) {
-    let brand = document.getElementsByClassName("1").value;
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box1").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+       return elem.Model == brand;
+     });
+  }
 
-    filterbrand = CarsData1.filter(function (elem) {
-      return elem.Model == brand;
-    });
+  renderCardList(filterbrand);
+}
+
+function brand2() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box2")
+
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box2").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+       return elem.Model == brand;
+     });
   }
 
   renderCardList(filterbrand);
 }
 
 
+function brand3() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box3")
+
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box3").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+       return elem.Model == brand;
+     });
+  }
+
+  renderCardList(filterbrand);
+}
+
+function brand4() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box4")
+
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box4").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+       return elem.Model == brand;
+     });
+  }
+
+  renderCardList(filterbrand);
+}
+
+function brand5() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box5")
+
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box5").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+       return elem.Model == brand;
+     });
+  }
+
+  renderCardList(filterbrand);
+}
+
+function brand6() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box6")
+
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box6").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+       return elem.Model == brand;
+     });
+  }
+
+  renderCardList(filterbrand);
+}
 
 
+function brand7() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box7")
+
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box7").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+       return elem.Model == brand;
+     });
+  }
+
+  renderCardList(filterbrand);
+}
+
+function brand8() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box8")
+
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box8").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+       return elem.location == brand;
+     });
+  }
+
+  renderCardList(filterbrand);
+}
+
+function brand9() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box9")
+
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box9").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+       return elem.location == brand;
+     });
+  }
+
+  renderCardList(filterbrand);
+}
+
+function brand10() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box10")
+
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box10").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+       return elem.location == brand;
+     });
+  }
+
+  renderCardList(filterbrand);
+}
 
 
+function brand11() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box11")
+
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box11").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+       return elem.location == brand;
+     });
+  }
+
+  renderCardList(filterbrand);
+}
 
 
+function brand12() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box12")
+
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box12").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+       return elem.location == brand;
+     });
+  }
+
+  renderCardList(filterbrand);
+}
 
 
+function brand13() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box13")
+
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box13").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+       return elem.location == brand;
+     });
+  }
+
+  renderCardList(filterbrand);
+}
 
 
+function brand14() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box14")
+
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box14").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+       return elem.location == brand;
+     });
+  }
+
+  renderCardList(filterbrand);
+}
+
+function brand15() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box15")
+
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box15").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+       return elem.location == brand;
+     });
+  }
+
+  renderCardList(filterbrand);
+}
+
+function brand16() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box16")
+
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box16").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+       return elem.location == brand;
+     });
+  }
+
+  renderCardList(filterbrand);
+}
+
+function brand17() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box17")
+
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box17").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+       return elem.location == brand;
+     });
+  }
+
+  renderCardList(filterbrand);
+}
 
 
+function brand20() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box20")
 
-//  ----------------------------------------------------------------------------------------------------------------
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box20").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+      if(elem.Mills<=brand){
+return elem.Mills
+      }
+       
+     });
+  }
+
+  renderCardList(filterbrand);
+}
+
+function brand21() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box21")
+
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box21").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+      if(elem.Mills<=brand){
+return elem.Mills
+      }
+       
+     });
+  }
+
+  renderCardList(filterbrand);
+}
+function brand22() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box22")
+
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box22").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+      if(elem.Mills<=brand){
+return elem.Mills
+      }
+       
+     });
+  }
+
+  renderCardList(filterbrand);
+}
+
+function brand23() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box23")
+
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box23").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+      if(elem.Mills<=brand){
+return elem.Mills
+      }
+       
+     });
+  }
+
+  renderCardList(filterbrand);
+}
+
+function brand24() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box24")
+
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box24").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+      if(elem.Mills<=brand){
+return elem.Mills
+      }
+       
+     });
+  }
+
+  renderCardList(filterbrand);
+}
+
+function brand25() {
+  pagehide.style.display="none"
+  let checkbox = document.getElementById("box25")
+
+  if (checkbox.checked === true) {
+    let brand = document.getElementById("box25").value;
+    
+     filterbrand = CarsData1.filter(function (elem) {
+      if(elem.Mills<=brand){
+return elem.Mills
+      }
+       
+     });
+  }
+
+  renderCardList(filterbrand);
+}
+
+//------------------------------------------------------------------------------------------------------------------
 
 // Resetting the page
 
 function reset() {
-  fetchAndRenderEmployees();
+  window.location.reload()
 }
 
 
 
-// ------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------
 
-
-
-// ----------------------------------------------------------------------------------------------------------------
+// Pagination Function
 
 function showPagination(totalItems, limit) {
   const numOfButtons = Math.ceil(totalItems / limit); // 3 button
@@ -328,6 +651,4 @@ function getAButton(text, pageNumber) {
   //   <button class="pagination-button" data-page-number="${pageNumber}" >${text}</button>
   // `
 }
-
-// --------------------------------------------------------------------------------------------------
 
