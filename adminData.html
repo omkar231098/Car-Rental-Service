@@ -8,26 +8,153 @@
     <link rel="stylesheet" href="adminData.css">
 </head>
 <body>
-    <main id="main">
-        <!--------------------------------------------------Side Naviagation Div----------------------------------------------->
-          <nav id="sidenav" >
-        
-          <img onclick="reset()" src="Car RentalExpress (1).png" alt="" width="90%">
-        
-          
-        
-        
-        
-        
-          </nav>
-        
-        <div class="data-list-wrapper" id="data-list-wrapper"></div>
-        
-        
-        
-        </main>
-        
-        <div class="pagination-wrapper" id="pagination-wrapper"></div>
+   <!--------------------------------------------------------Main Div------------------------------------------------------>
+<main id="main">
+  <!--------------------------------------------------Side Naviagation Div----------------------------------------------->
+    <nav id="sidenav" >
+  
+    <img onclick="reset()" src="Car RentalExpress (1).png" alt="imglogo" width="90%">
+  
+  <h2 id="headtitle" >ADMIN PANEL</h2>
+  
+    <h4 id="headsubtitle">ADD CAR</h4>
+            <input
+              type="text"
+              id="car-name"
+              class="u-full-width"
+              placeholder="Name"
+            />
+            <input
+              type="number"
+              id="car-price"
+              class="u-full-width"
+              placeholder="Price"
+            />
+            <input
+              type="text"
+              id="car-img"
+              class="u-full-width"
+              placeholder="Image Url"
+            />
+            <input
+              type="number"
+              id="car-mileage"
+              class="u-full-width"
+              placeholder="Mileage"
+            />
+            <input
+            type="text"
+            id="car-color"
+            class="u-full-width"
+            placeholder="Color"
+          />
+          <input
+            type="text"
+            id="car-available"
+            class="u-full-width"
+            placeholder="Available Date"
+          />
+          <input
+            type="text"
+            id="car-model"
+            class="u-full-width"
+            placeholder="Model"
+          />
+          <input
+            type="text"
+            id="car-location"
+            class="u-full-width"
+            placeholder="Location"
+          />
+          <input
+          type="number"
+          id="car-year"
+          class="u-full-width"
+          placeholder="Year"
+        />
+            <button id="add-car" class="u-full-width1 button button-primary">
+            ADD CAR
+            </button>
+            <hr />
+  
+            <h4 id="headsubtitle">Update All Fields of Car</h4>
+            <input
+              type="text"
+              id="update-car-name"
+              class="u-full-width"
+              placeholder="Name"
+            />
+            <input
+              type="number"
+              id="update-car-price"
+              class="u-full-width"
+              placeholder="Price"
+            />
+            <input
+              type="text"
+              id="update-car-img"
+              class="u-full-width"
+              placeholder="Image Url"
+            />
+            <input
+              type="number"
+              id="update-car-mileage"
+              class="u-full-width"
+              placeholder="Mileage"
+            />
+            <input
+            type="text"
+            id="update-car-color"
+            class="u-full-width"
+            placeholder="Color"
+          />
+          <input
+            type="text"
+            id="update-car-available"
+            class="u-full-width"
+            placeholder="Available Date"
+          />
+          <input
+            type="text"
+            id="update-car-model"
+            class="u-full-width"
+            placeholder="Model"
+          />
+          <input
+            type="text"
+            id="update-car-location"
+            class="u-full-width"
+            placeholder="Location"
+          />
+          <input
+            type="number"
+            id="update-car-year"
+            class="u-full-width"
+            placeholder="Year"
+          />
+            <button
+              id="update-car"
+              class="u-full-width1 button button-primary"
+            >
+              UPDATE CAR
+            </button>
+      
+  
+  
+  
+  
+  
+  
+  
+    </nav>
+  
+  <div class="data-list-wrapper" id="data-list-wrapper"></div>
+  
+  
+  
+  </main>
+  
+  <div class="pagination-wrapper" id="pagination-wrapper"></div>
 </body>
 </html>
 <script src="adminData.js"></script>
