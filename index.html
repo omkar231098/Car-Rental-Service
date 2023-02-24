@@ -6,12 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="loging.css">
 </head>
 <body>
+  <div class="overlay" onclick="hideModal()"></div>
+
+  <div class="loginform">
+      <span  onclick="hideModal()">&times;</span>
+      <div id="log"> <h1>LOG INTO YOUR ACCOUNT</h1></div>
+      <form action="">
+          <div>
+              <label for="" >UserName</label>
+              <input type="text" id="username" placeholder="username" required>
+          </div>
+          <div>
+              <label for="">Password</label>
+              <input type="password" id="password" placeholder="password" required>
+          </div>
+          <button id="login" ><b>LOG IN</b></button>
+      </form>
+      <div id="anchor">
+              <a href="">Forgot username?</a>
+              <a href="">Forgot password?</a>
+      </div>
+     
+      <div id="amozon">
+          <img src="https://www.searchenginewatch.com/wp-content/uploads/sites/25/cnt-import/sew/IMG/459/260459/login-with-amazon-button.JPG" alt="">
+      </div>
+      <div id="signup"><h4>Need An Account?  </h4> <a href="/signup.html">Create One Now</a></div>
+  </div>
     <!-- nav bar here -->
   <div class="head">
   <div class="navhead">
     <div class="navbar">
+    
     <a href="./index.html">CRES</a>
     <a href="#">RESERVATION</a>
     <a href="#">OFFERS</a>
@@ -21,7 +49,7 @@
     <a href="#">HELP</a>
     <a href="#">AVIS PREFERRED</a>
     <a href="./signup.html"><button>SIGN UP</button></a>
-    <a href="./login.html"><button>LOG IN</button></a>
+    <a href="#"><button onclick="showModal()">LOG IN</button></a>
   </div>
 </div>
 <div class="find">
@@ -194,7 +222,8 @@
     
   </div>
   
-
+ 
+      
 </div>
 <div class="copy"> 
    <p> © 2023 Avis Rent A Car System, LLC </p>
@@ -203,7 +232,13 @@
  
 <div id="footer-option">
     <slect>Belgium</slect>
+    
+    <a href="./adminlogin.html" , style="color:white; font-size: 15px;">admin Login</a>
 </div>
+
+
+ 
+
     
 </div>
 
