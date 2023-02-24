@@ -30,19 +30,21 @@
     z-index: 1;
 }
 .loginform{
-    width: 350px;
+    width: 35%;
+    height: 88%;
     background-color: white;
-    padding: 30px 30px ;
+    padding:60px 30px 60px 30px;
     position: absolute;
     z-index: 9;
-    transition: 2s;
+    transition: 1s;
     left: 50%;
     top: -50%;
     transform: translate(-50%,-50%);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding-top: 50px;
     border-radius: 10px;
     padding: 40px;
     font-size: 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 .showloginform{
   top: 50%;
@@ -50,27 +52,29 @@
 }
 .loginform input{
     width: 100%;
-    margin-bottom:  15px ;
+    margin-bottom:  25px ;
     margin-top: 10px;
-    height: 35px;
+   height: 1000px;
     outline: black;
     outline-style:auto;
+    background: rgba(0,0, 0,0.05 );
+  
 }
 .loginform button{
     background-color:rgb(213,1,42);
     color: white ;
     padding: 10px 15px;
     border: none;
-    height: 50px;
+    height: 60px;
     font-size: 20px;
-   
+   cursor: pointer;
 }
 .loginform span{
     position: absolute;
-    right: 5px;
-    width: 30px ;
-    height: 30px;
-    line-height: 30px;
+    right: 10px;
+    width: 50px ;
+    height: 50px;
+    line-height: 50px;
     background-color: rgb(213,1,42);
     text-align: center;
     top: 5px;
@@ -80,4 +84,68 @@
 }
 #username,#password{
 height: 40px;
+}
+.loginform h1{
+    font-size: 45px;
+    text-shadow: black;
+   
+}
+#anchor{
+    display: flex;  
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 80px;
+   padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+  text-decoration: none;
+}#anchor a{
+    text-decoration: none;
+    color:  rgb(213,1,42);
+    font-size: 30px;
+}
+
+#username{
+    height: 60px;
+    outline: 0px;
+    font-size: 30px;
+}
+#password{
+    height: 60px;
+    outline: 0px;
+    font-size: 30px;
+}
+#username::placeholder{
+    font-size: 30px;
+    padding-left: 20px;
+}
+#password::placeholder{
+    font-size: 30px;
+    padding-left: 20px;
+    
+}
+#log{
+    margin-bottom: 30px;
+}
+#amozon{  
+    padding-top: 70px;
+    display:flex;
+    margin: auto;
+    justify-content: center;
+}
+#signup{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    align-items: center;
+}
+#signup a{
+    text-decoration: none;
+    color:  rgb(213,1,42); 
+    font-size: 30px;
+    padding-left: 10px;
+}
+#signup h4{
+    font-size: 30px;
 }

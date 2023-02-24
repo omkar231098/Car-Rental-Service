@@ -14,17 +14,27 @@
 
     <div class="loginform">
         <span  onclick="hideModal()">&times;</span>
+        <div id="log"> <h1>LOG INTO YOUR ACCOUNT</h1></div>
         <form action="">
             <div>
                 <label for="" >UserName</label>
-                <input type="text" id="username">
+                <input type="text" id="username" placeholder="username" required>
             </div>
             <div>
                 <label for="">Password</label>
-                <input type="password" id="password">
+                <input type="password" id="password" placeholder="password" required>
             </div>
-            <button id="login" >Login</button>
+            <button id="login" ><b>LOG IN</b></button>
         </form>
+        <div id="anchor">
+                <a href="">Forgot username?</a>
+                <a href="">Forgot password?</a>
+        </div>
+       
+        <div id="amozon">
+            <img src="https://www.searchenginewatch.com/wp-content/uploads/sites/25/cnt-import/sew/IMG/459/260459/login-with-amazon-button.JPG" alt="">
+        </div>
+        <div id="signup"><h4>Need An Account?  </h4> <a href="/signup.html">Create One Now</a></div>
     </div>
 </body>
 <script src="./loging.js"></script>
