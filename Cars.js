@@ -147,17 +147,22 @@ function renderCardList(data) {
   mainSection.innerHTML = cardList;
 
 
-  // const buttons = document.querySelectorAll('.card__Button1');
+  const buttons = document.querySelectorAll('.card__Button1');
 
-  // buttons.forEach(button => {
-  //   button.addEventListener('click', function(event) {
-  //     const currentId = event.target.id;
-  //     populateEditForms(currentId)
-  //     // console.log(`Clicked button id: ${currentId}`);
-  //   });
-  // });
+  buttons.forEach(button => {
+    button.addEventListener('click', function(event) {
+      const currentId = event.target.id;
+      // console.log(currentId)
+      fetchAndRenderEmployees3(currentId) 
+      // console.log(`Clicked button id: ${currentId}`);
+    });
+  });
   
 }
+// ---------------------------------------------------------------------------------------------------------
+
+
+
 
 
 // ---------------------------------------------------------------------------------------------------------------
@@ -167,7 +172,7 @@ function getCard(id,Name,price,img,Mills,Exterior,Available,Model,location,Year)
   let card = `
   <div class="card" id="cardhover" data-id=${id} >
   <div class="card__img">
-  <img src=${img} alt="Car Image" />
+  <img width="80%" src=${img} alt="Car Image" />
   </div>
   <div class="card__body">
       <div  class="card__Button1"  ><button class="cardbtn" id=${id}>View Details</button></div>
