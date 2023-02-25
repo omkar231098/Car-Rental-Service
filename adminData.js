@@ -136,7 +136,7 @@ function getCard(id,Name,price,img,Mills,Exterior,Available,Model,location,Year)
   let card = `
   <div class="card" id="cardhover" data-id=${id} >
   <div class="card__img">
-  <img src=${img} alt="Car Image" />
+  <img width="80%" src=${img} alt="Car Image" />
   </div>
   <div class="card__body">
       <div  class="card__Button"  ><button class="cardbtn" id=${id}>Edit Details</button></div>
