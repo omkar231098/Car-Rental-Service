@@ -11,31 +11,33 @@
 <body>
   <div class="overlay" onclick="hideModal()"></div>
 
-  <div class="loginform">
-      <span  onclick="hideModal()">&times;</span>
-      <div id="log"> <h1>LOG INTO YOUR ACCOUNT</h1></div>
-      <form action="">
-          <div>
-              <label for="" >UserName</label>
-              <input type="text" id="username" placeholder="username" required>
-          </div>
-          <div>
-              <label for="">Password</label>
-              <input type="password" id="password" placeholder="password" required>
-          </div>
-          <button id="login" ><b>LOG IN</b></button>
-      </form>
-      <div id="anchor">
-              <a href="">Forgot username?</a>
-              <a href="">Forgot password?</a>
-      </div>
-     
-      <div id="amozon">
-          <img src="https://www.searchenginewatch.com/wp-content/uploads/sites/25/cnt-import/sew/IMG/459/260459/login-with-amazon-button.JPG" alt="">
-      </div>
-      <div id="signup"><h4>Need An Account?  </h4> <a href="/signup.html">Create One Now</a></div>
-  </div>
-    <!-- nav bar here -->
+    <div class="loginform">
+        <span id="closebox"  onclick="hideModal()">&times;</span>
+        <div id="log"> <h2>LOG INTO YOUR ACCOUNT</h2></div>
+        <form id="mainform" action="">
+            <div>
+                <label for="" >UserName</label>
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <div>
+                <label for="">Password</label>
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <button id="login" ><b>LOG IN</b></button>
+        </form>
+        <div id="anchor">
+                <a href="">Forgot username?</a>
+                <a href="">Forgot password?</a>
+        </div>
+       
+        <div id="amozon">
+            <img width="70%" src="https://www.searchenginewatch.com/wp-content/uploads/sites/25/cnt-import/sew/IMG/459/260459/login-with-amazon-button.JPG" alt="">
+        </div>
+        <div id="signup"><h4>Need An Account?  </h4>&nbsp;&nbsp;<a href="/signup.html">Create One Now</a></div>
+    </div>
+
+  
+    <!--------------------------------nav bar here------------------------------------ -->
   <div class="head">
   <div class="navhead">
     <div class="navbar">
@@ -52,6 +54,8 @@
     <a href="#"><button onclick="showModal()">LOG IN</button></a>
   </div>
 </div>
+
+<!---------------- after nav find part here------------------------------ -->
 <div class="find">
      <h1>FIND YOUR BEST CAR RENTAL WITH CRES</h1>
      <button onClick="window.location.href='Cars.html';">SELECT MY CAR</button>
@@ -98,30 +102,7 @@
  <div class="benefits">
   <h1>BENEFITS FROM OUR TRAVEL PARTNERS</h1>
  </div>
- <!-- <div class="cardsmall">
-   <div class="s">
-     <div>
-        <img src="https://www.avis.com/content/dam/avis/na/us/common/offers/Deal_AmazonTestingPhase.jpg/jcr:content/renditions/cq5dam.web.375.375.webp" alt="">
-     </div>
-     <div> <p>Get up to 30% off with pay now plus 10% back in an Amazon Gift Card*</p></div>
-       <p>Get up to 30% off with pay now plus 10% back in an Amazon Gift Card*</p> -->
-      <!-- <h6>LEARN MORE</h6> -->
-   <!-- </div>
-   <div>
-    <div>
-       <img src="https://www.avis.com/content/dam/avis/na/us/common/offers/avis-hp-aarp-logo-150x150.jpg/jcr:content/renditions/cq5dam.web.150.150.webp" alt="">
-    </div>
-    <div><p>Get up to 30% off with pay now plus 10% back in an Amazon Gift Card*</p>
-     <h6>LEARN MORE</h6></div>
-      
-  </div>
-  <div> -->
-    <!-- <div> -->
-       <!-- <img src="https://www.avis.com/content/dam/avis/na/us/common/offers/Deal_Veterans_Testing.jpg/jcr:content/renditions/cq5dam.web.150.150.webp" alt=""> -->
-    <!-- </div> -->
-      <!-- <p>Get up to 30% off with pay now plus 10% back in an Amazon Gift Card*</p> -->
-     <!-- <h6>LEARN MORE</h6> -->
-  <!-- </div> --> 
+ 
 <div class="small">
     <div>
     <div class="img">
@@ -152,6 +133,8 @@
 
   
  </div>
+
+
  <div class="lastcar">
    <div> 
     <div>
@@ -163,88 +146,173 @@
      <!-- <img src="https://www.avis.com/content/dam/avis/na/us/common/offers/avis-car-sales-suv-hp-tile-1000x440.jpg/jcr:content/renditions/cq5dam.web.1536.1008.webp" alt=""> -->
     </div>
 </div>
-<!-- footer part -->
+<!-----------------------------footer part-------------------------------------- -->
 <footer id="footer">
   <div id="footer-top">
      <div id="list1">
-    <a onclick="return showOrHide('menulink1');" class="footer-header arrow-down-grey-mob"> Top US Destinations</a>
-    <p>Travel Guides</p>
-    <p>Car Rental Las Vegas</p>
-    <p>Car Rental Los Angles</p>
-    <p>Car Rental Chicago</p>
-    <p>Car Rental Las Orlando</p>
-    <p>Car Rental Miami</p>
+      <ul>
+        <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 16px; font-weight: 600;"  href="#">TOP US DESTINATIONS</a></li>
+        <br>
+        <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Travel Guides</a></li>
+        <br>
+        <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Car Rental Las Vegas</a></li>
+        <br>
+        <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Car Rental Los Angles</a></li>
+        <br>
+        <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Car Rental Chicago</a></li>
+        <br>
+        <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Car Rental Las Orlando</a></li>
+        <br>
+        <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Car Rental Miami</a></li>
+        <br>
+        <li><a style="text-decoration: none; color: white; " href="#"></a></li>
+        <br>
+        <li><a style="text-decoration: none; color: white;" href="#"></a></li>
+
+
+    </ul>
+  
   </div>
   <div id="list2">
-    <a onclick="return showOrHide('menulink1');" class="footer-header arrow-down-grey-mob"> Rental Car Types</a>
-    <p>One-Way Airport Car Rental</p>
-    <p>Luxury Car Rental</p>
-    <p>Pickup Truck Rental</p>
-    <p>Van Rental</p>
-    <p>SUV Rental</p>
-    <p>Rental Car Sizes—Sedans</p>
+   <ul>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 16px; font-weight: 600;"  href="#">RENTAL CAR TYPES</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px; " href="#">One-Way Airport Car Rental</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Luxury Car Rental</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Pickup Truck Rental</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Van Rental</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">SUV Rental</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Rental Car Sizes—Sedans</a></li>
+      <br>
+      <li><a  href="#"></a></li>
+      <br>
+      <li><a href="#"></a></li>
+      
+      
+  </ul>
   </div>
   <div id="list2">
-    <a onclick="return showOrHide('menulink1');" class="footer-header arrow-down-grey-mob"> CRES EXTRAS</a>
-    <p>Rental Car Products</p>
-    <p>Car Rental Services</p>
-    <p>Protections & Coverages</p>
-    <p>Loss Damage Waiver</p>
-    <p>Roadside Assistance</p>
+    <ul>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 16px; font-weight: 600;"  href="#">CRES EXTRAS</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Rental Car Products</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Car Rental Services</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Protections & Coverages</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Loss Damage Waiver</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Roadside Assistance</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#"></a></li>
+      <br>
+      <li><a href="#"></a></li>
+      <br>
+      <li><a href="#"></a></li>
+      <br>
+      <li><a href="#"></a></li>
+
+      </ul>
+  </div>
+  <div id="list2">
+
+    <ul>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 16px; font-weight: 600;"  href="#">CRES PARTNERS</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Affiliates</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Travel Agents</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Military & Veterans</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Airline Points Partners</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Hotel Points Partners</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#"></a></li>
+      <br>
+      <li><a href="#"></a></li>
+      <br>
+      <li><a href="#"></a></li>
+      <br>
+      <li><a href="#"></a></li>
+
+      </ul>
    
   </div>
   <div id="list2">
-    <a onclick="return showOrHide('menulink1');" class="footer-header arrow-down-grey-mob"> CRES PARTNERS</a>
-    <p>Affiliates</p>
-    <p>Travel Agents</p>
-    <p>Military & Veterans</p>
-    <p>Airline Points Partners</p>
-    <p>Hotel Points Partners</p>
-   
+
+    <ul>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 16px; font-weight: 600;"  href="#">COMPANY INFO</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">About CRES</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Best Price Pledge</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Avis Careers</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Site Map</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Lost & Found</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">We Try Harder</a></li>
+      <br>
+      <li><a  style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Accessibility</a></li>
+
+      </ul>
   </div>
   <div id="list2">
-    <a onclick="return showOrHide('menulink1');" class="footer-header arrow-down-grey-mob"> COMPANY INFO</a>
-    <p>About Avis</p>
-    <p>Best Price Pledge</p>
-    <p>Avis Careers</p>
-    <p>Site Map</p>
-    <p>Lost & Found</p>
-    <p>We Try Harder</p>
-    <p>Accessibility</p>
-  </div>
-  <div id="list2">
-    <a onclick="return showOrHide('menulink1');" class="footer-header arrow-down-grey-mob"> SECURITY & PRIVACY</a>
-    <p>Terms Of Use</p>
-    <p>Privacy Notice</p>
-    <p>Your Privacy Choices</p>
-    <p>Copyright Notices</p>
-    <p>Fraud & Scams</p>
-    
+
+    <ul>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 16px; font-weight: 600;"  href="#">SECURITY & PRIVACY</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Terms Of Use</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Privacy Notice</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Your Privacy Choices</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Copyright Notices</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Fraud & Scams</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#"></a></li>
+      <br>
+      <li><a  style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#"></a></li>
+      <br>
+      <li><a  style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#"></a></li>
+      <br>
+      <li><a  style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#"></a></li>
+
+      </ul>    
   </div>
   
  
       
 </div>
+
 <div class="copy"> 
    <p> © 2023 Avis Rent A Car System, LLC </p>
-   <img src="https://www.avis.com/etc/designs/platform/clientlib/images/icon-norton.png" alt="">
+   <img width="100px"height="50px" style="padding-right: 10px;" src="https://www.avis.com/etc/designs/platform/clientlib/images/icon-norton.png" alt="">
 </div>
  
-<div id="footer-option">
-    <slect>Belgium</slect>
-    
-    <a href="./adminlogin.html" , style="color:white; font-size: 15px;">admin Login</a>
+
+<div id="Admin">
+ 
+<button onClick="window.location.href='adminlogin.html';">Admin</button>
 </div>
-
-
  
 
     
-</div>
+
 
 </footer>
-  
-
 </body>
 </html>
 <script src="index.js"></script>
