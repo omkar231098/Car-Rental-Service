@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+   
 }
 .btn-login{
     padding: 10px 15px;
@@ -30,19 +30,19 @@
     z-index: 1;
 }
 .loginform{
-    width: 35%;
-    height: 88%;
+    width:400px;
+    height:550px;
     background-color: white;
-    padding:60px 30px 60px 30px;
+    font-family: Arial, Helvetica, sans-serif;
     position: absolute;
-    z-index: 9;
+    z-index: 8;
     transition: 1s;
     left: 50%;
     top: -50%;
     transform: translate(-50%,-50%);
-  padding-top: 50px;
-    border-radius: 10px;
     padding: 40px;
+    border-radius: 8px;
+   
     font-size: 20px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
@@ -69,12 +69,15 @@
     font-size: 20px;
    cursor: pointer;
 }
+#log{
+    padding-bottom: 10px;
+}
 .loginform span{
     position: absolute;
     right: 10px;
     width: 50px ;
     height: 50px;
-    line-height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(213,1,42);
     text-align: center;
     top: 5px;
@@ -93,43 +96,43 @@ height: 40px;
 #anchor{
     display: flex;  
     justify-content: space-between;
-    width: 80%;
+    width: 400px;
     margin-top: 80px;
-   padding-top: 30px;
+    padding-top: 30px;
     padding-left: 10px;
     padding-right: 10px;
     margin: auto;
-  text-decoration: none;
+    text-decoration: none;
 }#anchor a{
+   
     text-decoration: none;
     color:  rgb(213,1,42);
-    font-size: 30px;
+    font-size: 20px;
+   
 }
 
 #username{
     height: 60px;
     outline: 0px;
-    font-size: 30px;
+    font-size: 25px;
 }
 #password{
     height: 60px;
     outline: 0px;
-    font-size: 30px;
+    font-size: 25px;
 }
 #username::placeholder{
-    font-size: 30px;
+    font-size: 25px;
     padding-left: 20px;
 }
 #password::placeholder{
-    font-size: 30px;
+    font-size: 25px;
     padding-left: 20px;
     
 }
-#log{
-    margin-bottom: 30px;
-}
+
 #amozon{  
-    padding-top: 70px;
+ padding-top: 35px;
     display:flex;
     margin: auto;
     justify-content: center;
@@ -137,15 +140,25 @@ height: 40px;
 #signup{
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 20px;
     align-items: center;
+    font-size: 20px;
 }
 #signup a{
+    display: grid;
+    
+    column-gap: 10px;
     text-decoration: none;
-    color:  rgb(213,1,42); 
-    font-size: 30px;
-    padding-left: 10px;
+    color:  rgb(0, 0, 0); 
 }
-#signup h4{
-    font-size: 30px;
+
+#mainform{
+    margin: auto;
+    width: 400px;
+    height: 300px;
+}
+
+#closebox{
+    height: 30px;
+    width:30px;
 }

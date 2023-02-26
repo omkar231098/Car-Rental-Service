@@ -1,3 +1,5 @@
+
+// Sigup Javascript 
 let formElement=document.querySelector("form");
 let countryInp=document.getElementById("country");
 
@@ -19,7 +21,7 @@ let zipcodeInput=document.getElementById("zipcode");
 let submit=document.getElementById("submit")
 ;
 
-let url=`https://63c638794ebaa80285418bc3.mockapi.io/products`;
+let urll=`https://63c638794ebaa80285418bc3.mockapi.io/products`;
 formElement.addEventListener("submit",(e)=>{
 e.preventDefault();
     let obj={
@@ -35,14 +37,14 @@ e.preventDefault();
     //console.log(obj);
     alert("Successfully Registred");
     
-    fetch(url,{
+    fetch(urll,{
         method:"POST",
         body:JSON.stringify(obj),
         headers:{ "Content-Type" : "application/json"}
     }).then((res)=>{return res.json()})
     .then((data)=>{
         console.log(data)
-        window.location.href="login.html";
+        hideModal()
     })
     
    }else{

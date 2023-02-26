@@ -4,25 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="./loging.css">
 </head>
 <body>
-    <button class="btn-login" onclick="showModal()">Login</button>
-
     <div class="overlay" onclick="hideModal()"></div>
 
     <div class="loginform">
-        <span  onclick="hideModal()">&times;</span>
-        <div id="log"> <h1>LOG INTO YOUR ACCOUNT</h1></div>
-        <form action="">
+        <span id="closebox"  onclick="hideModal()">&times;</span>
+        <div id="log"> <h2>LOG INTO YOUR ACCOUNT</h2></div>
+        <form id="mainform" action="">
             <div>
                 <label for="" >UserName</label>
-                <input type="text" id="username" placeholder="username" required>
+                <input type="text" id="username" placeholder="Username" required>
             </div>
             <div>
                 <label for="">Password</label>
-                <input type="password" id="password" placeholder="password" required>
+                <input  type="password" id="password" placeholder="Password" required>
             </div>
             <button id="login" ><b>LOG IN</b></button>
         </form>
@@ -32,9 +30,9 @@
         </div>
        
         <div id="amozon">
-            <img src="https://www.searchenginewatch.com/wp-content/uploads/sites/25/cnt-import/sew/IMG/459/260459/login-with-amazon-button.JPG" alt="">
+            <img width="70%" src="https://www.searchenginewatch.com/wp-content/uploads/sites/25/cnt-import/sew/IMG/459/260459/login-with-amazon-button.JPG" alt="">
         </div>
-        <div id="signup"><h4>Need An Account?  </h4> <a href="/signup.html">Create One Now</a></div>
+        <div id="signup"><h4>Need An Account?  </h4>&nbsp;&nbsp;<a href="/signup.html">Create One Now</a></div>
     </div>
 </body>
 <script src="./loging.js"></script>

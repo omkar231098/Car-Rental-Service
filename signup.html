@@ -5,21 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="signup.css">
-    <title>Document</title>
+    <title>Signup Page</title>
+   
+   
     
 </head>
 <body>
-    <div id="nav">
-          
-           <a href="./index.html">CRES</a>
-           <button onclick="showModal()"><b>LOG IN</b></button>
-    </div>
-    
+
+
+
+<!----------------------------------------------------Naviagtion  Part----------------------------------------------------->
+
+    <div id="navbar">
+        <div id="navsub1" ><a style="text-decoration: none;  color:rgb(213,1,42) ; font-weight:990;" href="index.html">CRES</a></div>
+      
+        <div id="navsub2">
+          <a style="text-decoration: none; color:rgb(0, 0, 0) ; font-weight:600; font-family: Verdana, Geneva, Tahoma, sans-serif; " href="">RESERVATION</a>
+          <a style="text-decoration: none; color:rgb(0, 0, 0) ; font-weight:600; font-family: Verdana, Geneva, Tahoma, sans-serif;" href="">OFFERS</a>
+          <a style="text-decoration: none; color:rgb(0, 0, 0) ; font-weight:600; font-family: Verdana, Geneva, Tahoma, sans-serif;" href="">LOCATIONS</a>
+          <a style="text-decoration: none; color:rgb(0, 0, 0) ; font-weight:600; font-family: Verdana, Geneva, Tahoma, sans-serif;" href="">CARS & SERVICES</a>
+          <a style="text-decoration: none; color:rgb(0, 0, 0) ; font-weight:600; font-family: Verdana, Geneva, Tahoma, sans-serif;" href="">CAR SALES</a>
+          <a style="text-decoration: none; color:rgb(0, 0, 0) ; font-weight:600;  font-family: Verdana, Geneva, Tahoma, sans-serif;" href="">HELP</a>
+          <a style="text-decoration: none; color:rgb(0, 0, 0) ; font-weight:600; font-family: Verdana, Geneva, Tahoma, sans-serif;" href="">AVIS PREFERRED</a>
+        
+          <a  style="text-decoration: none; color:rgb(0, 0, 0) ;  font-family: Verdana, Geneva, Tahoma, sans-serif;" href="login.html">LOG IN</a>
+      
+        </div>
+      </div>
+
+<!----------------------------------------------------Login Part----------------------------------------------------->
+
+
+
+
+
+
+
+
     <div id="signup">
       <div id="forcolor" >
     <form action="#" id="signupFirstForm">
         <div id="welcome"><h1>WELCOME TO CAR RENTAL EXPRESS</h1></div>
-        <label for="Country">Country</label><br>
+
+        <div id="innerbox">
+
+            <label for="Country">Country</label>
        
             <select name="Seclect Country" id="country" required>
                 <option value="">Select Country</option>
@@ -76,46 +106,55 @@
                 <option value="Turks and Caicos">Turks and Caicos</option>
                 <option value="Uruguay">Uruguay</option>
                 <option value="Venzuela">Venzuela</option>              
-            </select><br>
+            </select>
 
           <label for="First Name">First Name</label>
-          <br>
+          
           <input type="text" placeholder="Enter First Name" id="firstName" required>
-          <br>
+          
           <label for="Last Name">Last Name</label>
-          <br>
+         
           <input type="text"placeholder="Enter Last Name" id="last-name" required>
-          <br>
+         
           <label for="Mobile Number">Mobile Number</label>
-          <br>
+          
           <input type="number"  placeholder="Enter Mobile No"  id="mobile" required>
-          <br>
+          
           <label for="Email">Email</label>
-          <br>         
+                 
           <input type="email" placeholder="Enter Email" id="email"  required>
-          <br>
+       
           <label for="Password">Password</label>
-          <br>
+         
           
           <input type="password" placeholder="Enter Password" id="firstPassword"   required>
-          <br>
+       
           <label for="Password" > Re Enter Password</label>
-          <br>
+         
           <input type="password"placeholder="Re Enter Password" id="secondPassword"  required>
-          <br>
+         
           <label for="Address">Address</label>
-          <br>
+        
           <input type="text" placeholder="Enter Address" id="address"  required>
-          <br>
+         
           <label for="zipcode">Zipcode</label>
-          <br>
+          
           <input type="number" placeholder="Enter zipcode" id="zipcode"  required>
-          <br>
-          <input type="submit" value="Save" id="submit" style="background-color: red; width: 100%;height: 65px;"> 
+        
+          <input type="submit" value="Save" id="submit" > 
+
+
+
+
+        </div>
+        
 
     </form>
 </div> 
 </div>
 </body>
-<script src="./signup.js"></script>
+
+  
+
+<script src="signup.js"></script>
 </html>
