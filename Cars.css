@@ -1,3 +1,100 @@
+
+/*---------------------------------------------- Navigation Bar CSS -----------------------------------------*/
+
+#navbar{
+display: flex;
+width: 100%;
+margin: auto;
+justify-content: space-between;
+background-color: rgb(219,219,219);
+height: 65px;
+align-items: center;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+#navsub1{
+width:20%;
+padding-left: 40px;
+font-size: 28px;
+
+}
+#navsub2{
+display: flex;
+width: 80%;
+justify-content: space-between;
+padding-right: 40px;
+font-size: 15px;
+  
+}
+/* ----------------------------------------------Footer Bar CSS---------------------------------------------- */
+
+#footer{
+display: flex;
+flex-direction: column;
+margin: auto;
+width: 100%;
+height: auto;
+background-color: rgb(21, 19, 19);
+color: white;
+}
+#footer-top{
+  display: flex;
+  grid-template-columns: repeat(6,1fr);
+  margin: auto; 
+  justify-content: space-between;
+  
+  height:400px;
+  
+ 
+ width: 90%;
+}
+#list1,#list2,#list3,#list4{
+  display: flex;
+ flex-direction: column;
+ margin: auto;
+ 
+ align-content: stretch;
+
+}
+#list1>ul,#list2>ul{
+  list-style-type: none;
+}
+
+.copy{
+  display: flex;
+  justify-content: flex-end;
+  margin: auto; 
+  column-gap: 20px;
+  
+  height:auto;
+  vertical-align: sub;
+ width: 90%;
+ padding-bottom: 50px;
+ 
+}
+
+#Admin{
+  display: none;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  background-color:rgb(21, 19, 19) ;
+  color: white;
+  
+}
+#Admin>button{
+  background-color:rgb(21, 19, 19) ;
+  color: white;
+  border: none;
+  font-size: 15px;
+}
+
+/*----------------------------------------------Data Fetching CSS--------------------------------------------*/
+
+#CarDataMain{
+display: block;
+margin-top: 10px;
+}
 #main{
     display: flex;
     flex-direction: row;
@@ -260,6 +357,197 @@
           }
 
 
+/* -------------------------------------------------------------------------------------------------------- */
+/* Car section Demo         */
 
-        
+#main1{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 78%;
+    column-gap: 10px;
+    
+  }
 
+  #sidenav1{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 30%;
+    height: auto;
+    padding: 8px;
+
+  }
+
+  #data-list-wrapperr{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+    
+    height: auto;
+  }
+  .carname{
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(93,93,93);
+    padding: 10px;
+  }
+  .carprice{
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 18px;
+  }
+  .caravailable{
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+  }
+  .carlocation{
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 18px;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+   
+  }
+
+  .Cardetails{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 18px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+  }
+  #box26{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    gap: 10px;
+    padding: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+  }
+
+  #box27{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    gap: 10px;
+    padding: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+  }
+  #infodiv{
+    display: grid;
+    padding: 18px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(93,93,93);
+  }
+  #bottomimg{
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  #features{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    padding: 18px;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-size: 15px;
+
+  }
+  #title{
+    padding-left: 10px;  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #box28{
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    gap: 10px;
+    padding: 15px;
+    color: rgb(93,93,93);
+
+  }
+
+  #box29{
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    gap: 10px;
+    padding: 15px;
+    color: rgb(93,93,93);
+  }
+
+  .PriceTitle{
+    font-size: 28px;
+    color: rgb(93,93,93);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .downpayment{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+  }
+  .Payment{
+    width:95%;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 10px;
+    background-color:rgb(240,240,240);
+    color: black;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .Payment1{
+    width:95%;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 10px;
+    background-color:rgb(213,1,42);
+    color: white;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #info{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+  }
+
+  #info1{
+    display: block;
+    background-color:rgb(213,1,42);
+    padding: 12px;
+    color: white;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+  }
+  #info2{
+    display: block;
+    background-color:rgb(240,240,240);
+    padding: 12px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+
+  }
+#lastinfo{
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  text-align: center;
+  font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
