@@ -8,110 +8,322 @@
     <link rel="stylesheet" href="Cars.css">
 <body>
 
+<!--------------------------------------------------Navigation Bar-------------------------------------------->
+
+<div id="navbar">
+  <div id="navsub1" ><a style="text-decoration: none;  color:rgb(213,1,42) ; font-weight:990;" href="index.html">CRES</a></div>
+
+  <div id="navsub2">
+    <a style="text-decoration: none; color:rgb(0, 0, 0) ; font-weight:600; font-family: Verdana, Geneva, Tahoma, sans-serif; " href="">RESERVATION</a>
+    <a style="text-decoration: none; color:rgb(0, 0, 0) ; font-weight:600; font-family: Verdana, Geneva, Tahoma, sans-serif;" href="">OFFERS</a>
+    <a style="text-decoration: none; color:rgb(0, 0, 0) ; font-weight:600; font-family: Verdana, Geneva, Tahoma, sans-serif;" href="">LOCATIONS</a>
+    <a style="text-decoration: none; color:rgb(0, 0, 0) ; font-weight:600; font-family: Verdana, Geneva, Tahoma, sans-serif;" href="">CARS & SERVICES</a>
+    <a style="text-decoration: none; color:rgb(0, 0, 0) ; font-weight:600; font-family: Verdana, Geneva, Tahoma, sans-serif;" href="">CAR SALES</a>
+    <a style="text-decoration: none; color:rgb(0, 0, 0) ; font-weight:600;  font-family: Verdana, Geneva, Tahoma, sans-serif;" href="">HELP</a>
+    <a style="text-decoration: none; color:rgb(0, 0, 0) ; font-weight:600; font-family: Verdana, Geneva, Tahoma, sans-serif;" href="">AVIS PREFERRED</a>
+
+  </div>
+</div>
+
 <!-------------------------------------------------------Main Div------------------------------------------------------>
-<main id="main">
-<!--------------------------------------------------Side Naviagation Div----------------------------------------------->
-  <nav id="sidenav" >
-
-  <img onclick="reset()" src="Car RentalExpress (1).png" alt="" width="90%">
-
-  <h3 id="searchtitle">Find Your Dream Car </h3>
+  <div id="CarDataMain">
+    <main id="main">
+      <!--------------------------------------------------Side Naviagation Div----------------------------------------------->
+        <nav id="sidenav" >
+      
+        <img onclick="reset()" src="Car RentalExpress (1).png" alt="" width="90%">
+      
+        <h3 id="searchtitle">Find Your Dream Car </h3>
+              
+        <input type="text" oninput="search()"  name="search" id="searchbox"   placeholder="Search Cars">
+        <br>
+      
+        <hr style=" border: none; background-color:rgb(255, 18, 18); width: 98%; height: 1.8px;">
+        <br>
+      
+      <!-----------------------------------------------------Filter Buttons--------------------------------------------------->
+      <button type="button" class="collapsible">Sort By</button>
+      <div class="content" id="content1">
+      
+          <div><button onclick="handlesort1()" class="sortbtnhover" id="sortbtn1" >Year : New to Old</button></div>
+          <div><button onclick="handlesort2()" class="sortbtnhover" id="sortbtn2" >Year : Old to New</button></div>
+          <div><button onclick="handlesort3()" class="sortbtnhover" id="sortbtn3" >Mileage: Low to High</button></div>
+          <div><button onclick="handlesort4()" class="sortbtnhover" id="sortbtn4" >Mileage: High to Low</button></div>
+          <div><button onclick="handlesort5()" class="sortbtnhover" id="sortbtn5" >Price: Low to High</button></div>
+          <div><button onclick="handlesort6()" class="sortbtnhover" id="sortbtn6" >Price: High to Low</button></div>
+          
+      
+      </div>
+      
+      <button type="button" class="collapsible">Brands</button>
+      <div class="content">
         
-  <input type="text" oninput="search()"  name="search" id="searchbox"   placeholder="Search Cars">
-  <br>
-
-  <hr style=" border: none; background-color:rgb(255, 18, 18); width: 98%; height: 1.8px;">
-  <br>
-
-<!-----------------------------------------------------Filter Buttons--------------------------------------------------->
-<button type="button" class="collapsible">Sort By</button>
-<div class="content" id="content1">
-
-    <div><button onclick="handlesort1()" class="sortbtnhover" id="sortbtn1" >Year : New to Old</button></div>
-    <div><button onclick="handlesort2()" class="sortbtnhover" id="sortbtn2" >Year : Old to New</button></div>
-    <div><button onclick="handlesort3()" class="sortbtnhover" id="sortbtn3" >Mileage: Low to High</button></div>
-    <div><button onclick="handlesort4()" class="sortbtnhover" id="sortbtn4" >Mileage: High to Low</button></div>
-    <div><button onclick="handlesort5()" class="sortbtnhover" id="sortbtn5" >Price: Low to High</button></div>
-    <div><button onclick="handlesort6()" class="sortbtnhover" id="sortbtn6" >Price: High to Low</button></div>
-    
-
-</div>
-
-<button type="button" class="collapsible">Brands</button>
-<div class="content">
-  
-  <div><input id="box1" onclick="brand1()"  type="checkbox"  name="checkbox-filter-1" value="Mitsubishi" >Mitsubishi</input></div>
-    
-    <div><input id="box2" onclick="brand2()"  type="checkbox"  name="checkbox-filter-1" value="Kia" >Kia</input></div>
-
-    <div><input id="box3" onclick="brand3()"  type="checkbox"  name="checkbox-filter-1" value="Volkswagen" >Volkswagen</input></div>
-    
-    <div><input id="box4" onclick="brand4()"  type="checkbox"  name="checkbox-filter-1" value="Hyundai" >Hyundai</input></div>
-    
-    <div><input id="box5" onclick="brand5()"  type="checkbox"  name="checkbox-filter-1" value="Nissan" >Nissan</input></div>
-
-    <div><input id="box6" onclick="brand6()"  type="checkbox"  name="checkbox-filter-1" value="Toyota" >Toyota</input></div>
-
-    <div><input id="box7" onclick="brand7()"  type="checkbox"  name="checkbox-filter-1" value="Ford" >Ford</input></div>
-
-
-</div>
-
-<button type="button" class="collapsible">Location</button>
-<div class="content">
- 
-    <div><input id="box8" type="checkbox" onclick="brand8()" name="checkbox-filter-1" value="Delhi">Delhi</input></div>
-    
-    <div><input id="box9" type="checkbox" onclick="brand9()" name="checkbox-filter-1" value="Mumbai">Mumbai</input></div>
-
-    <div><input id="box10" type="checkbox" onclick="brand10()" name="checkbox-filter-1" value="Bangalore">Bangalore</input></div>
-    
-    <div><input id="box11" type="checkbox" onclick="brand11()" name="checkbox-filter-1" value="Hyderabad">Hyderabad</input></div>
-    
-    <div><input id="box12" type="checkbox" onclick="brand12()" name="checkbox-filter-1" value="Kolkata">Kolkata</input></div>
-
-    <div><input id="box13" type="checkbox" onclick="brand13()" name="checkbox-filter-1" value="Pune">Pune</input></div>
-    
-    <div><input id="box14" type="checkbox" onclick="brand14()" name="checkbox-filter-1" value="Patna">Patna</input></div>
-
-    <div><input id="box15" type="checkbox" onclick="brand15()" name="checkbox-filter-1" value="Rajkot">Rajkot</input></div>
-    
-    <div><input id="box16" type="checkbox" onclick="brand16()" name="checkbox-filter-1" value="Meerut">Meerut</input></div>
-    
-    <div><input id="box17" type="checkbox" onclick="brand17()" name="checkbox-filter-1" value="Varanasi">Varanasi</input></div>
-
-
-</div>
-
-<button type="button" class="collapsible">Mileage</button>
-<div class="content">
- 
-
-
-  <div><input id="box20" type="checkbox" onclick="brand20()" name="checkbox-filter-1" value="50000">50,000 or less</input></div>
-  
-  <div><input id="box21" type="checkbox" onclick="brand21()" name="checkbox-filter-1" value="60000">60,000 or less</input></div>
-  
-  <div><input id="box22" type="checkbox" onclick="brand22()" name="checkbox-filter-1" value="70000">70,000 or less</input></div>
-   
-  <div><input id="box23" type="checkbox" onclick="brand23()" name="checkbox-filter-1" value="80000">80,000 or less</input></div>
-  
-  <div><input id="box24" type="checkbox" onclick="brand24()" name="checkbox-filter-1" value="90000">90,000 or less</input></div>
-  
-  <div><input id="box25" type="checkbox" onclick="brand25()" name="checkbox-filter-1" value="100000">100,000 or less</input></div>
-
-</div>
+        <div><input id="box1" onclick="brand1()"  type="checkbox"  name="checkbox-filter-1" value="Mitsubishi" >Mitsubishi</input></div>
+          
+          <div><input id="box2" onclick="brand2()"  type="checkbox"  name="checkbox-filter-1" value="Kia" >Kia</input></div>
+      
+          <div><input id="box3" onclick="brand3()"  type="checkbox"  name="checkbox-filter-1" value="Volkswagen" >Volkswagen</input></div>
+          
+          <div><input id="box4" onclick="brand4()"  type="checkbox"  name="checkbox-filter-1" value="Hyundai" >Hyundai</input></div>
+          
+          <div><input id="box5" onclick="brand5()"  type="checkbox"  name="checkbox-filter-1" value="Nissan" >Nissan</input></div>
+      
+          <div><input id="box6" onclick="brand6()"  type="checkbox"  name="checkbox-filter-1" value="Toyota" >Toyota</input></div>
+      
+          <div><input id="box7" onclick="brand7()"  type="checkbox"  name="checkbox-filter-1" value="Ford" >Ford</input></div>
+      
+      
+      </div>
+      
+      <button type="button" class="collapsible">Location</button>
+      <div class="content">
+       
+          <div><input id="box8" type="checkbox" onclick="brand8()" name="checkbox-filter-1" value="Delhi">Delhi</input></div>
+          
+          <div><input id="box9" type="checkbox" onclick="brand9()" name="checkbox-filter-1" value="Mumbai">Mumbai</input></div>
+      
+          <div><input id="box10" type="checkbox" onclick="brand10()" name="checkbox-filter-1" value="Bangalore">Bangalore</input></div>
+          
+          <div><input id="box11" type="checkbox" onclick="brand11()" name="checkbox-filter-1" value="Hyderabad">Hyderabad</input></div>
+          
+          <div><input id="box12" type="checkbox" onclick="brand12()" name="checkbox-filter-1" value="Kolkata">Kolkata</input></div>
+      
+          <div><input id="box13" type="checkbox" onclick="brand13()" name="checkbox-filter-1" value="Pune">Pune</input></div>
+          
+          <div><input id="box14" type="checkbox" onclick="brand14()" name="checkbox-filter-1" value="Patna">Patna</input></div>
+      
+          <div><input id="box15" type="checkbox" onclick="brand15()" name="checkbox-filter-1" value="Rajkot">Rajkot</input></div>
+          
+          <div><input id="box16" type="checkbox" onclick="brand16()" name="checkbox-filter-1" value="Meerut">Meerut</input></div>
+          
+          <div><input id="box17" type="checkbox" onclick="brand17()" name="checkbox-filter-1" value="Varanasi">Varanasi</input></div>
+      
+      
+      </div>
+      
+      <button type="button" class="collapsible">Mileage</button>
+      <div class="content">
+       
+      
+      
+        <div><input id="box20" type="checkbox" onclick="brand20()" name="checkbox-filter-1" value="50000">50,000 or less</input></div>
+        
+        <div><input id="box21" type="checkbox" onclick="brand21()" name="checkbox-filter-1" value="60000">60,000 or less</input></div>
+        
+        <div><input id="box22" type="checkbox" onclick="brand22()" name="checkbox-filter-1" value="70000">70,000 or less</input></div>
+         
+        <div><input id="box23" type="checkbox" onclick="brand23()" name="checkbox-filter-1" value="80000">80,000 or less</input></div>
+        
+        <div><input id="box24" type="checkbox" onclick="brand24()" name="checkbox-filter-1" value="90000">90,000 or less</input></div>
+        
+        <div><input id="box25" type="checkbox" onclick="brand25()" name="checkbox-filter-1" value="100000">100,000 or less</input></div>
+      
+      </div>
+      
+      
+        </nav>
+      
+      <div class="data-list-wrapper" id="data-list-wrapper"></div>
+      
+      
+      
+      </main>
+      
+      <div class="pagination-wrapper" id="pagination-wrapper"></div>
+  </div>
 
 
-  </nav>
+<main id="main1">
 
-<div class="data-list-wrapper" id="data-list-wrapper"></div>
+
+<div class="data-list-wrapperr" id="data-list-wrapperr"></div>
 
 
 
+<nav id="sidenav1" class="sidenav1" >
+                
+</nav>
+        
+      
+        
 </main>
 
-<div class="pagination-wrapper" id="pagination-wrapper"></div>
+
+<!--------------------------------------------------Footer Bar-------------------------------------------->
+
+<footer id="footer">
+  <div id="footer-top">
+     <div id="list1">
+      <ul>
+        <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 16px; font-weight: 600;"  href="#">TOP US DESTINATIONS</a></li>
+        <br>
+        <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Travel Guides</a></li>
+        <br>
+        <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Car Rental Las Vegas</a></li>
+        <br>
+        <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Car Rental Los Angles</a></li>
+        <br>
+        <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Car Rental Chicago</a></li>
+        <br>
+        <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Car Rental Las Orlando</a></li>
+        <br>
+        <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Car Rental Miami</a></li>
+        <br>
+        <li><a style="text-decoration: none; color: white; " href="#"></a></li>
+        <br>
+        <li><a style="text-decoration: none; color: white;" href="#"></a></li>
+
+
+    </ul>
+  
+  </div>
+  <div id="list2">
+   <ul>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 16px; font-weight: 600;"  href="#">RENTAL CAR TYPES</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px; " href="#">One-Way Airport Car Rental</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Luxury Car Rental</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Pickup Truck Rental</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Van Rental</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">SUV Rental</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Rental Car Sizes—Sedans</a></li>
+      <br>
+      <li><a  href="#"></a></li>
+      <br>
+      <li><a href="#"></a></li>
+      
+      
+  </ul>
+  </div>
+  <div id="list2">
+    <ul>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 16px; font-weight: 600;"  href="#">CRES EXTRAS</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Rental Car Products</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Car Rental Services</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Protections & Coverages</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Loss Damage Waiver</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Roadside Assistance</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#"></a></li>
+      <br>
+      <li><a href="#"></a></li>
+      <br>
+      <li><a href="#"></a></li>
+      <br>
+      <li><a href="#"></a></li>
+
+      </ul>
+  </div>
+  <div id="list2">
+
+    <ul>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 16px; font-weight: 600;"  href="#">CRES PARTNERS</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Affiliates</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Travel Agents</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Military & Veterans</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Airline Points Partners</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Hotel Points Partners</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#"></a></li>
+      <br>
+      <li><a href="#"></a></li>
+      <br>
+      <li><a href="#"></a></li>
+      <br>
+      <li><a href="#"></a></li>
+
+      </ul>
+   
+  </div>
+  <div id="list2">
+
+    <ul>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 16px; font-weight: 600;"  href="#">COMPANY INFO</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">About CRES</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Best Price Pledge</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Avis Careers</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Site Map</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Lost & Found</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">We Try Harder</a></li>
+      <br>
+      <li><a  style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Accessibility</a></li>
+
+      </ul>
+  </div>
+  <div id="list2">
+
+    <ul>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 16px; font-weight: 600;"  href="#">SECURITY & PRIVACY</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Terms Of Use</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Privacy Notice</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Your Privacy Choices</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Copyright Notices</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#">Fraud & Scams</a></li>
+      <br>
+      <li><a style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#"></a></li>
+      <br>
+      <li><a  style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#"></a></li>
+      <br>
+      <li><a  style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#"></a></li>
+      <br>
+      <li><a  style="text-decoration: none; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 13px;" href="#"></a></li>
+
+      </ul>    
+  </div>
+  
+ 
+      
+</div>
+
+<div class="copy"> 
+   <p> © 2023 Avis Rent A Car System, LLC </p>
+   <img width="100px"height="50px" style="padding-right: 10px;" src="https://www.avis.com/etc/designs/platform/clientlib/images/icon-norton.png" alt="">
+</div>
+ 
+
+<div id="Admin">
+ 
+<button onClick="window.location.href='adminlogin.html';">Admin</button>
+</div>
+ 
+
+    
+
+
+</footer>
+
+
+
+
+
+
+
 
 </body>
 </html>
