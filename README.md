@@ -11,3 +11,12 @@
 
 ![mid](https://github.com/omkar231098/Car-Rental-Service/assets/109202596/c6091bc2-e886-4649-ac5c-5fafda4a2e0a)
 
+
+## Bottom Page
+
+
+![foot](https://github.com/omkar231098/Car-Rental-Service/assets/109202596/463c040d-e6da-4922-807a-a1371e2c47d2)
+
+
+
+
