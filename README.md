@@ -36,6 +36,9 @@
 ![checkout](https://github.com/omkar231098/Car-Rental-Service/assets/109202596/3ba6561a-74fc-456b-a1b4-525411920776)
 
 
+## Payment Page
 
+
+![pay](https://github.com/omkar231098/Car-Rental-Service/assets/109202596/e3e82fc2-f6f2-4b2e-a2d8-9a8b394e8f7b)
 
 
