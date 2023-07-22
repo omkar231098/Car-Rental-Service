@@ -7,7 +7,17 @@
 <li>CSS</li>
 <li>Javascript</li>
 
+## Team Members
 
+ [Omkar Dhanave](https://github.com/omkar231098) 
+ 
+ [Alka Trivedi](https://github.com/Alka0814) 
+ 
+ [Amita Kumari](https://github.com/AMITA0115) 
+ 
+  [Chandan Sharma](https://github.com/chandansharma65914)
+ 
+ 
 
 ## Home Page
 
